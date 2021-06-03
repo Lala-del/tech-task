@@ -16,11 +16,11 @@
   width: 100%;
   padding: 25px 0;
   transition: all 0.3s ease; }
-  .navbar-menu .sticky {
+  .navbar-menu.sticky {
     padding: 10px 0;
     background: #ffffff;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1); }
-    .navbar-menu .sticky .icon .cancel-btn {
+    .navbar-menu.sticky .icon .cancel-btn {
       top: 10px; }
   .navbar-menu .header-content {
     display: flex;
