@@ -280,4 +280,120 @@ $primary-color: #ffff
     }
 }
 
+.aboutWork {
+    padding: 100px 0px;
+    &__title {
+        font-weight: 700;
+        font-size: 35px;
+        margin: 0 0 10px;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        z-index: 1;
+        padding: 0 0 10px;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+            background: #d9832e;
+            width: 50px;
+            left: 0;
+            margin: auto;
+            height: 2px;
+        }
+    }
+    &__text {
+       margin: 0;
+        font-size: 14px;
+        letter-spacing: 2px; 
+        text-transform: uppercase;
+    }
+    .skill{
+        margin-top:35px;
+        position:relative;
+        &__name{
+            font-size: 18px;
+            text-transform:none;
+            margin-bottom: 7px;
+            margin-bottom:.33em;
+        }
+        &__bar{
+            width: 100%;
+            height: 5px;
+            background: #eee;
+            overflow: hidden;
+            border-radius: 0px;
+            margin-top: 10px;
+            &__inside{
+                line-height: 2em;
+                position: absolute;
+                top: 3px;
+                right: 0;
+                font-size: 14px;
+                text-align: center;
+                min-width: 3em;
+                border-radius: 0px;
+                color: #555a64;
+                display:none;
+                &:after {
+                    border: 0.5em solid transparent;
+                    content: "";
+                    margin-left: -0.5em;
+                    position: absolute;
+                    bottom: -50%;
+                    left: 50%;
+                }
+            }
+            &__value{
+                height: 5px;
+                float: left;
+                border-radius: 0px;
+                background: #d9832e;
+
+            }
+        }
+        &__html{
+            left: calc(88.5% - 1.5em);
+        }
+        &__wp {
+             left: calc(55.5% - 1.5em);
+        }
+        &__mg {
+             left: calc(75.5% - 1.5em);
+        }
+        &__ui {
+             left: calc(81.5% - 1.5em);
+        }
+    }
+    .mt-66{
+        margin-top: 66px;
+    }
+    .mt-20{
+        margin-top: 20px;
+    }
+    .feature {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 15px;
+        border-radius: 5px;
+        background: #ffffff;
+        border: 2px solid #d9832e;
+        margin-bottom: 40px;
+        &__icon {
+            font-size: 30px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            color: #d9832e;
+        }
+        &__heading{
+            margin: 6px 0 0 0;
+            font-size: 16px;
+            color: #090a0c;
+        }
+    }
+  
+}
+
 @import 'responsive'

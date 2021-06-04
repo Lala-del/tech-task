@@ -21,3 +21,26 @@ const body = document.querySelector("body");
       this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 
     }
+
+
+
+var skills = {
+  ht: 92,
+  wp: 75,
+  mg: 86,
+  ux: 88
+ };
+
+$.each(skills, function(key, value) {
+  var skillbar = $("." + key);
+
+  skillbar.animate(
+    {
+      width: value + "%"
+    },
+    3000,
+    function() {
+      $(".skill__bar__inside").fadeIn();
+    }
+  );
+}); 
